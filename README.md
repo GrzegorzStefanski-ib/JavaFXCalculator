@@ -71,7 +71,7 @@ This is a project for java classes at my University.
 * Java 15
 
 ``` 
-sudo add-apt-repository ppa:linuxprising/java
+sudo add-apt-repository ppa:linuxuprising/java
 sudo apt update
 sudo apt install oracle-java15-installer
 ```
