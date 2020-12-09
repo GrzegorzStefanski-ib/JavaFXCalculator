@@ -4,6 +4,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
+[![Build Status][build-sheild]][build-url]
 
 
 
@@ -113,6 +114,8 @@ Project Link: [https://github.com/GrzegorzStefanski-ib/JavaFXCalculator](https:/
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[build-sheild]: https://travis-ci.com/GrzegorzStefanski-ib/JavaFXCalculator.svg?branch=master
+[build-url]: https://travis-ci.com/GrzegorzStefanski-ib/JavaFXCalculator
 [contributors-shield]: https://img.shields.io/github/contributors/GrzegorzStefanski-ib/JavaFXCalculator.svg
 [contributors-url]: https://github.com/GrzegorzStefanski-ib/JavaFXCalculator/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/GrzegorzStefanski-ib/JavaFXCalculator.svg
