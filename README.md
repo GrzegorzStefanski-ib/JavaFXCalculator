@@ -79,6 +79,7 @@ sudo apt install oracle-java15-installer
 ### Installation
 
 ```
+chmod +x ./gradlew
 ./gradlew build
 ```
 
@@ -120,6 +121,6 @@ Project Link: [https://github.com/GrzegorzStefanski-ib/JavaFXCalculator](https:/
 [stars-url]: https://github.com/GrzegorzStefanski-ib/JavaFXCalculator/stargazers
 [issues-shield]: https://img.shields.io/github/issues/GrzegorzStefanski-ib/JavaFXCalculator.svg
 [issues-url]: https://github.com/GrzegorzStefanski-ib/JavaFXCalculator/issues
-[license-shield]: https://img.shields.io/github/license/GrzegorzStefanski-ib/JavaFXCalculator.svg
+[license-shield]: https://img.shields.io/badge/License-MIT-yellow.svg
 [license-url]: https://github.com/GrzegorzStefanski-ib/JavaFXCalculator/blob/master/LICENSE
 [product-screenshot]: images/product.png
