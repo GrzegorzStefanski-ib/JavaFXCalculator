@@ -6,4 +6,5 @@ dist: trusty
 jdk: oraclejdk15
 
 script:
+  - chmod +x ./gradlew
   - sudo ./gradlew build --scan -s
