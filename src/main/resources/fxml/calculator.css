@@ -1,0 +1,75 @@
+.root {
+    -fx-font-size: 16pt;
+    -fx-font-weight: bold;
+    -fx-font-family: "Courier New";
+}
+
+#mainPane{
+    -fx-background-color: transparent;
+}
+
+#display {
+    -fx-text-fill: white;
+    -fx-background-color: #56534F;
+    -fx-opacity: 1;
+    -fx-background-radius: 0;
+    -fx-border-radius: 10 10 0 0;
+    -fx-background-radius: 10 10 0 0;
+}
+
+.button{
+    -fx-border-color: #56534F;
+    -fx-border-width: 0.5;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+    -fx-text-fill: white;
+    -fx-background-color: #83817F
+}
+
+#buttonDivide, #buttonMultiply,
+#buttonMinus, #buttonPlus, #buttonEquals{
+    -fx-background-color: #FF9F09;
+}
+
+#buttonC, #buttonPM, #buttonPercent{
+    -fx-background-color: #696662
+}
+
+#maximizeButton, #minimizeButton, #exitButton{
+    -fx-background-radius: 8;
+    -fx-border-color: transparent;
+    -fx-opacity: 0.5;
+}
+
+#maximizeButton:hover,
+#minimizeButton:hover,
+#exitButton:hover {
+    -fx-opacity: 0.8;
+}
+
+GridPane .button:hover,
+HBox .button:hover{
+    -fx-border-color: red;
+}
+
+#exitButton{
+    -fx-background-color: red;
+}
+
+#minimizeButton{
+    -fx-background-color: yellow;
+}
+
+#maximizeButton{
+    -fx-background-color: #4f7a4f;
+}
+
+#buttonEquals{
+    -fx-border-radius: 0 0 8.5 0;
+    -fx-background-radius: 0 0 10 0;
+}
+
+#button0 {
+    -fx-border-radius: 0 0 0 8.5;
+    -fx-background-radius: 0 0 0 10;
+}
