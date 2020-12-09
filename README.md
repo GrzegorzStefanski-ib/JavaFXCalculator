@@ -121,5 +121,5 @@ Project Link: [https://github.com/GrzegorzStefanski-ib/JavaFXCalculator](https:/
 [issues-shield]: https://img.shields.io/github/issues/GrzegorzStefanski-ib/JavaFXCalculator.svg
 [issues-url]: https://github.com/GrzegorzStefanski-ib/JavaFXCalculator/issues
 [license-shield]: https://img.shields.io/github/license/GrzegorzStefanski-ib/JavaFXCalculator.svg
-[license-url]: https://github.com/GrzegorzStefanski-ib/JavaFXCalculator/blob/master/LICENSE.txt
+[license-url]: https://github.com/GrzegorzStefanski-ib/JavaFXCalculator/blob/master/LICENSE
 [product-screenshot]: images/product.png
