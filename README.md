@@ -53,7 +53,7 @@
 
 ![Product Name Screen Shot][product-screenshot]
 
-This is the project for java classes at my University.
+This is a project for java classes at my University.
 
 ### Built With
 
