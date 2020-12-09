@@ -68,14 +68,26 @@ This is the project for java classes at my University.
 
 ### Prerequisites
 
-* Gradle
+* Java 15
+
+``` 
+sudo apt-apt-repository ppa:linuxprising/java
+sudo apt update
+sudo apt install oracle-java15-installer
+```
 
 ### Installation
 
+```
+./gradlew build
+```
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
+```
+./gradlew run
+```
 
 <!-- LICENSE -->
 ## License
@@ -93,17 +105,8 @@ Project Link: [https://github.com/GrzegorzStefanski-ib/JavaFXCalculator](https:/
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
+* [Readme template](https://github.com/othneildrew/Best-README-Template)
 * [Img Shields](https://shields.io)
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Pages](https://pages.github.com)
-* [Animate.css](https://daneden.github.io/animate.css)
-* [Loaders.css](https://connoratherton.com/loaders)
-* [Slick Carousel](https://kenwheeler.github.io/slick)
-* [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)
-* [Sticky Kit](http://leafo.net/sticky-kit)
-* [JVectorMap](http://jvectormap.com)
-* [Font Awesome](https://fontawesome.com)
 * [Icon](https://visualpharm.com/free-icons/calculator-595b40b65ba036ed117d433f)
 
 
