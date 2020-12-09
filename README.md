@@ -14,7 +14,7 @@
     <img src="images/icon.svg" alt="Icon" width="80" height="80">
   </a>
 
-  <h3 align="center">Best-README-Template</h3>
+  <h3 align="center">JavaFX Calculator</h3>
 
 </p>
 
@@ -93,33 +93,21 @@ Project Link: [https://github.com/GrzegorzStefanski-ib/JavaFXCalculator](https:/
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
+* [Readme template](https://github.com/othneildrew/Best-README-Template)
 * [Img Shields](https://shields.io)
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Pages](https://pages.github.com)
-* [Animate.css](https://daneden.github.io/animate.css)
-* [Loaders.css](https://connoratherton.com/loaders)
-* [Slick Carousel](https://kenwheeler.github.io/slick)
-* [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)
-* [Sticky Kit](http://leafo.net/sticky-kit)
-* [JVectorMap](http://jvectormap.com)
-* [Font Awesome](https://fontawesome.com)
 * [Icon](https://visualpharm.com/free-icons/calculator-595b40b65ba036ed117d433f)
-
-
-
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg
+[contributors-shield]: https://img.shields.io/github/contributors/GrzegorzStefanski-ib/JavaFXCalculator.svg
 [contributors-url]: https://github.com/GrzegorzStefanski-ib/JavaFXCalculator/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg
+[forks-shield]: https://img.shields.io/github/forks/GrzegorzStefanski-ib/JavaFXCalculator.svg
 [forks-url]: https://github.com/GrzegorzStefanski-ib/JavaFXCalculator/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg
+[stars-shield]: https://img.shields.io/github/stars/GrzegorzStefanski-ib/JavaFXCalculator.svg
 [stars-url]: https://github.com/GrzegorzStefanski-ib/JavaFXCalculator/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg
+[issues-shield]: https://img.shields.io/github/issues/GrzegorzStefanski-ib/JavaFXCalculator.svg
 [issues-url]: https://github.com/GrzegorzStefanski-ib/JavaFXCalculator/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg
+[license-shield]: https://img.shields.io/github/license/GrzegorzStefanski-ib/JavaFXCalculator.svg
 [license-url]: https://github.com/GrzegorzStefanski-ib/JavaFXCalculator/blob/master/LICENSE.txt
 [product-screenshot]: images/product.png
