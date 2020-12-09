@@ -10,6 +10,11 @@ java {
     }
 }
 
+buildScan {
+    termsOfServiceUrl = 'https://gradle.com/terms-of-service'
+    termsOfServiceAgree = 'yes'
+}
+
 group 'org.example'
 version '1.0-SNAPSHOT'
 
