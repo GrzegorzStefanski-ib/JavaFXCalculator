@@ -2,7 +2,6 @@ package edu.ib;
 
 import java.net.URL;
 import java.util.ResourceBundle;
-import java.util.regex.Pattern;
 
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
@@ -13,18 +12,15 @@ import javafx.scene.control.TextField;
 import javafx.scene.text.Font;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
-import org.mariuszgromada.math.mxparser.*;
 
 public class JavaFXCalculatorController {
+
+    CalculatorModel cm = new CalculatorModel();
 
     private final double MAX_TEXT_WIDTH = 250;
     private final double MINIMAL_TEXT_SIZE = 16;
     private final double defaultFontSize = 54;
     private final Font defaultFont = Font.font(defaultFontSize);
-
-    private String regexNumberEnding = ".*[.\\d]$";
-    private String regexZeroAsNumber = ".*[^.\\d]0$|^0$";
-    private String regexDot = ".*[^.\\d-E]\\d+$|^\\d+$";
 
     @FXML
     private ResourceBundle resources;
@@ -120,193 +116,101 @@ public class JavaFXCalculatorController {
 
     @FXML
     void button0OnClick(ActionEvent event) {
-
-        if( !Pattern.matches(regexZeroAsNumber, display.getText() )) {
-            display.appendText("0");
-        }
-
-        display.end();
-
+        cm.appendNumber("0", display);
     }
 
     @FXML
     void button1OnClick(ActionEvent event) {
-        appendNumber("1");
+        cm.appendNumber("1", display);
     }
 
     @FXML
     void button2OnClick(ActionEvent event) {
-        appendNumber("2");
+        cm.appendNumber("2", display);
     }
 
     @FXML
     void button3OnClick(ActionEvent event) {
-        appendNumber("3");
+        cm.appendNumber("3", display);
     }
 
     @FXML
     void button4OnClick(ActionEvent event) {
-        appendNumber("4");
+        cm.appendNumber("4", display);
     }
 
     @FXML
     void button5OnClick(ActionEvent event) {
-        appendNumber("5");
+        cm.appendNumber("5", display);
     }
 
     @FXML
     void button6OnClick(ActionEvent event) {
-        appendNumber("6");
+        cm.appendNumber("6", display);
     }
 
     @FXML
     void button7OnClick(ActionEvent event) {
-        appendNumber("7");
+        cm.appendNumber("7", display);
     }
 
     @FXML
     void button8OnClick(ActionEvent event) {
-        appendNumber("8");
+        cm.appendNumber("8", display);
     }
 
     @FXML
     void button9OnClick(ActionEvent event) {
-        appendNumber("9");
+        cm.appendNumber("9", display);
     }
 
     @FXML
     void buttonCOnClick(ActionEvent event) {
-        display.setText("0");
+        cm.C(display);
     }
 
-    public void CE(){
-        if(!display.getText().isBlank()){
-
-            if(display.getText().endsWith(" ")){
-                display.deleteText(
-                        display.getLength() - 3,
-                        display.getLength()
-                );
-            }
-            else {
-                display.deleteText(
-                        display.getLength() - 1,
-                        display.getLength()
-                );
-            }
-
-        }
-
-        display.end();
+    public void CE() {
+        cm.CE(display);
     }
 
     @FXML
     void buttonDotOnClick(ActionEvent event) {
-        if( Pattern.matches(regexDot, display.getText() )) {
-            display.appendText(".");
-        }
-
-        display.end();
+        cm.dot(display);
     }
 
     @FXML
     void buttonEqualsOnClick(ActionEvent event) {
-        Expression e = new Expression(display.getText());
-        display.setText(Double.toString( e.calculate() ));
+        cm.equals(display);
     }
 
     @FXML
     void ButtonPercentOnClick(ActionEvent event) {
-
-        if( Pattern.matches(regexNumberEnding, display.getText() )) {
-
-            int i = display.getText().lastIndexOf(" ") + 1;
-            Double n = Double.parseDouble(display.getText( i, display.getLength() )) / 100;
-            display.replaceText(i, display.getLength(), n.toString());
-
-        }
-
-        display.end();
-
+        cm.percent(display);
     }
 
     @FXML
     void buttonPMOnClick(ActionEvent event) {
-
-        if( Pattern.matches(regexNumberEnding, display.getText() )) {
-
-            if (!display.getText().contains(" ")){
-
-                Double n = Double.parseDouble(display.getText()) * -1;
-                display.setText(n.toString());
-                display.end();
-                return;
-
-            }
-
-            int i = display.getText().lastIndexOf(" ");
-
-            if( display.getText(i + 1, i + 2).compareTo("-") == 0 ) {
-                display.replaceText(i + 1, i + 2, "");
-            }
-            else {
-                display.replaceText(i , i + 1, " -");
-            }
-
-            display.end();
-
-        }
-
+        cm.plusMinus(display);
     }
 
     @FXML
     void buttonPlusOnClick(ActionEvent event) {
-        appendOperation("+");
+        cm.appendOperation("+", display);
     }
 
     @FXML
     void buttonMinusOnClick(ActionEvent event) {
-        appendOperation("-");
+        cm.appendOperation("-", display);
     }
 
     @FXML
     void buttonMultiplyOnClick(ActionEvent event) {
-        appendOperation("*");
+        cm.appendOperation("*", display);
     }
 
     @FXML
     void ButtonDivideOnClick(ActionEvent event) {
-        appendOperation("/");
-    }
-
-    private void appendNumber(String number){
-        if( Pattern.matches(regexZeroAsNumber, display.getText() )) {
-            display.replaceText(
-                    display.getLength() - 1,
-                    display.getLength(),
-                    number
-            );
-        }
-        else {
-            display.appendText(number);
-        }
-
-        display.end();
-    }
-
-    private void appendOperation(String operation){
-        if( Pattern.matches(regexNumberEnding, display.getText() )) {
-            display.appendText(" " + operation + " ");
-        }
-        else {
-            display.replaceText(
-                    display.getLength() - 2,
-                    display.getLength() - 1,
-                    operation
-            );
-        }
-
-        display.end();
+        cm.appendOperation("/", display);
     }
 
     @FXML

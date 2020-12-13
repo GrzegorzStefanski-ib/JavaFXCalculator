@@ -5,7 +5,8 @@
 }
 
 #mainPane{
-    -fx-background-color: transparent;
+    -fx-background-radius: 10px 10px 10px 10px;
+    -fx-background-color: #56534f;
 }
 
 #display {
@@ -49,7 +50,7 @@
 
 GridPane .button:hover,
 HBox .button:hover{
-    -fx-border-color: red;
+    -fx-opacity: 0.75;
 }
 
 #exitButton{

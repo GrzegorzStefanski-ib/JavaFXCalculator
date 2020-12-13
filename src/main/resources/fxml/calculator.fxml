@@ -14,9 +14,9 @@
 
 <BorderPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="300.0" stylesheets="@calculator.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.ib.JavaFXCalculatorController">
    <top>
-      <Pane prefHeight="83.0" prefWidth="300.0" BorderPane.alignment="CENTER">
+      <Pane prefHeight="100.0" prefWidth="300.0" BorderPane.alignment="CENTER">
          <children>
-            <TextField fx:id="display" alignment="CENTER_RIGHT" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="83.0" prefWidth="300.0" text="0">
+            <TextField fx:id="display" alignment="CENTER_RIGHT" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="300.0" text="0">
                <font>
                   <Font size="40.0" />
                </font>
@@ -24,12 +24,12 @@
                   <Insets right="20.0" top="25.0" />
                </padding>
             </TextField>
-            <Button fx:id="minimizeButton" focusTraversable="false" layoutX="66.0" layoutY="8.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#minimizeButtonOnClick" prefHeight="16.0" prefWidth="16.0">
+            <Button fx:id="minimizeButton" focusTraversable="false" layoutX="54.0" layoutY="8.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#minimizeButtonOnClick" prefHeight="12.0" prefWidth="12.0">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Button fx:id="exitButton" focusTraversable="false" layoutX="14.0" layoutY="8.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#exitButtonOnClick" prefHeight="16.0" prefWidth="16.0" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+            <Button fx:id="exitButton" focusTraversable="false" layoutX="14.0" layoutY="8.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#exitButtonOnClick" prefHeight="12.0" prefWidth="12.0" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
@@ -37,7 +37,7 @@
                   <Font size="8.0" />
                </font>
             </Button>
-            <Button fx:id="maximizeButton" focusTraversable="false" layoutX="40.0" layoutY="8.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#maximaizeButtonOnClick" prefHeight="16.0" prefWidth="16.0" />
+            <Button fx:id="maximizeButton" focusTraversable="false" layoutX="34.0" layoutY="8.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#maximaizeButtonOnClick" prefHeight="12.0" prefWidth="12.0" />
          </children>
       </Pane>
    </top>
